@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('images/im.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background: url('images/pngtree.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000000;
+    padding: 18em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0.01cm;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10;
+    margin: 0;
+    text-align: center; /* Centering the nav items */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #0b0909c3;
+    text-decoration: none;
+    padding: 10px 20px; /* Adding padding to links for better clickability */
+}
+
+main {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro, .about-us, .projects-list {
+    background: #ffffff4e;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(10, 27, 43, 0.5); /* Adjusted shadow for better aesthetics */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #33333397;
+    color: #000;
+    position: fixed; /* Fixed positioning to stick to bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+.project-item {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.project-item a {
+    color: #096afcd5;
+    text-decoration: none;
+    border: 1px solid #0804e1;
+    padding: 5px 10px;
+    transition: background 0.1s, color 0.3s;
+}
+
+.project-item a:hover {
+    background: #060606;
+    color: #fff; /* Adjusted hover color for better contrast */
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .intro, .about-us, .projects-list {
+        padding: 10px;
+    }
+}
+
+.intro-image img {
+    margin: 5px;
+    max-width: 45%; /* Adjusted as needed */
+    height: auto;
+    border-radius: 50%;
+    display: block; /* Centering the image */
+    margin-left: auto; /* Centering the image */
+    margin-right: auto; /* Centering the image */
+    background-color: #f0f0f0;
+    padding: 1rem;
+}
+
+.intro-image p {
+    font-size: 1rem;
+    color: #333;
+    text-align: center; /* Centering the text */
+    margin: 0.5rem 0 0 0; /* Adding margin for spacing */
+}
