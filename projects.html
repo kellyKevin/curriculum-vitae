@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Your Name</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Include SweetAlert CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
+
 <body>
     <header>
         <h1>KELLY KEVIN MOMANYI</h1>
@@ -19,12 +26,56 @@
         </nav>
     </header>
     <main>
-        <section class="intro">
-            <p>Connect: <a href="https://github.com/kellyKevin" target="_blank">github</a></p>
-        </section>
+        <div>
+            <section id="skills" class="skills">
+                <div class="container">
+                    <h2>Skills & Expertise</h2>
+                    <div class="skills-grid">
+                        <div class="skill">
+                            <i class="fa-brands fa-js-square"></i>
+                            <h3>JavaScript</h3>
+                            <div class="progress-bar" style="width: 90%;"></div>
+                            <p>Proficient in modern JavaScript frameworks like React and Vue.js.</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-python"></i>
+                            <h3>Python</h3>
+                            <p>Experienced in building robust applications with Python and Django.</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-database"></i>
+                            <h3>Databases</h3>
+                            <p>Expertise in SQL and NoSQL databases like MySQL and MongoDB.</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-solid fa-cloud"></i>
+                            <h3>Cloud Computing</h3>
+                            <p>Skilled in deploying applications on AWS and Azure.</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Web Development</h3>
+                            <p>Proficient in HTML, CSS, and JavaScript.</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Backend Development</h3>
+                            <p>Experience with Node.js and Express for server-side development.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        
+
+        <div class="iframe-container">
+            <iframe class="PFrame" title="profile-frame" src="https://git-hub-widgets.vercel.app/profile.html?username=kellykevin"></iframe>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

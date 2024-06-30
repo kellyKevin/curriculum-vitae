@@ -112,3 +112,169 @@ footer {
     text-align: center; /* Centering the text */
     margin: 0.5rem 0 0 0; /* Adding margin for spacing */
 }
+.links {
+    font-size: 30px;
+    color: #041becc3;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /* Centering the nav items */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #0b0909c3;
+    text-decoration: none;
+    padding: 10px 20px;
+    /* Adding padding to links for better clickability */
+}
+
+main {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro,
+.about-us,
+.projects-list {
+    background: #ffffff4e;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(10, 27, 43, 0.5);
+    /* Adjusted shadow for better aesthetics */
+}
+
+.links {
+    font-size: 30px;
+    color: #041becc3;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #33333397;
+    color: #000;
+    position: fixed;
+    /* Fixed positioning to stick to bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+.project-item {
+    margin-bottom: 20px;
+    /* Increased margin for better spacing */
+}
+
+.project-item a {
+    color: #096afcd5;
+    text-decoration: none;
+    border: 1px solid #0804e1;
+    padding: 5px 10px;
+    transition: background 0.1s, color 0.3s;
+}
+
+.project-item a:hover {
+    background: #060606;
+    color: #fff;
+    /* Adjusted hover color for better contrast */
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .intro,
+    .about-us,
+    .projects-list {
+        padding: 10px;
+    }
+}
+
+.intro-image img {
+    margin: 5px;
+    max-width: 45%;
+    /* Adjusted as needed */
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    /* Centering the image */
+    margin-left: auto;
+    /* Centering the image */
+    margin-right: auto;
+    /* Centering the image */
+    background-color: #f0f0f0;
+    padding: 1rem;
+}
+
+.intro-image p {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    /* Centering the text */
+    margin: 0.5rem 0 0 0;
+    /* Adding margin for spacing */
+}
+.iframe-container {
+    display: grid;                 /* Use grid layout */
+    gap: 10px;                     /* Space between the iframes */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    justify-items: center;         /* Center items horizontally */
+}
+
+.PFrame {
+    width: 100%;                   /* Full width of grid column */
+    height: 500px;                 /* Fixed height */
+    border: none;                  /* Remove default border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border-radius: 8px;            /* Rounded corners */
+    overflow: hidden;              /* Hide overflow */
+}
+.skills-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    text-align: center;
+    width: 22%;
+}
+
+.skill i {
+    font-size: 48px;
+    color: #333;
+}
+.project-view {
+    background-color: #3085d6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project-view:hover {
+    background-color: #1e70c5;
+}
+.progress {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
