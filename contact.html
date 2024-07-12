@@ -11,6 +11,90 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Include SweetAlert CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Circular Social Share Menu </title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu .toggle {
+            position: relative;
+            height: 60px;
+            width: 60px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: 1.25s;
+            z-index: 5;
+        }
+
+        .menu.active .toggle {
+            transform: rotate(360deg);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15),
+                0 0 0 2px #333,
+                0 0 0 8px #fff;
+        }
+
+        .menu li {
+            position: absolute;
+            left: 0;
+            list-style: none;
+            transition: 0.5s;
+            transform: rotate(calc(360deg/8 * var(--i)));
+            transform-origin: 140px;
+            scale: 0;
+            transition-delay: calc(0.05s * var(--i));
+        }
+
+        .menu.active li {
+            scale: 1;
+        }
+
+        .menu li a {
+            position: relative;
+            display: flex;
+            transform: rotate(calc(360deg/-8 * var(--i)));
+            width: 60px;
+            height: 60px;
+            background-color: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.75rem;
+            color: var(--clr);
+            box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+            transition: 0.5s;
+        }
+
+        .menu li:hover a {
+            font-size: 2.5rem;
+            box-shadow: 0 0 0 2px var(--clr),
+                0 0 0 6px #fff;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,18 +112,60 @@
     <main>
         <section class="intro">
             <h2>Contact Me</h2>
-            <p>Hello! I'm Kelly Kevin Momanyi, a passionate web developer and tech enthusiast. Feel free to reach out to me through the contact options below.</p>
+            <p>Hello! I'm Kelly Kevin Momanyi, a passionate web developer and tech enthusiast. Feel free to reach out to
+                me through the contact options below.</p>
             <p>Email: <a href="mailto:kellymomanyi80@gmail.com" target="_blank">kellymomanyi80@gmail.com</a></p>
             <p>Phone: <a href="tel:+1234567890">+123-456-7890</a></p>
             <p>Postal Address: 1234 Street Name, City, Country</p>
-            <p>Connect: <a href="https://linktr.ee/kellykevinmomanyi" target="_blank">linktr.ee</a></p>
-            <div class="social-links">
-                <a class="links" href="https://x.com/KellyKe29748136" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
-                <a class="links" href="https://www.linkedin.com/in/kelly-kevin-769977287/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-                <a class="links" href="https://github.com/kellyKevin" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <div class="menu">
+                <div class="toggle">
+                    <ion-icon name="share-social"></ion-icon>
+                </div>
+
+                <li style="--i:0;--clr:#1877f2">
+                    <a href="https://web.facebook.com/profile.php?id=100081079490274" target="_blank"><ion-icon
+                            name="logo-facebook"></ion-icon></a>
+                </li>
+                <li style="--i:1;--clr:#25d366">
+                    <a href="https://api.whatsapp.com/send?phone=254708254289" target="_blank"><ion-icon
+                            name="logo-whatsapp"></ion-icon></a>
+                </li>
+                <li style="--i:2;--clr:#1da1f2">
+                    <a href="https://twitter.com/KellyKe29748136" target="_blank"><ion-icon
+                            name="logo-twitter"></ion-icon></a>
+                </li>
+                <li style="--i:3;--clr:#ea4c89">
+                    <a href="https://discord.com/invite/msbmnMRR" target="_blank"><ion-icon
+                            name="logo-Discord"></ion-icon></a>
+                </li>
+                <li style="--i:4;--clr:#0a66c2">
+                    <a href="https://www.linkedin.com/in/kelly-kevin-769977287/" target="_blank"><ion-icon
+                            name="logo-linkedin"></ion-icon></a>
+                </li>
+                <li style="--i:5;--clr:#c32aa3">
+                    <a href="https://www.instagram.com/kelly_kevin_momanyi" class="btn" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li style="--i:6;--clr:#bd081c">
+                    <a href="https://medium.com/@kellymomanyi80" target="_blank"><ion-icon
+                            name="logo-Medium"></ion-icon></a>
+                </li>
+                <li style="--i:7;--clr:#ff0000">
+                    <a href="https://github.com/kellyKevin" target="_blank"><ion-icon name="logo-GitHub"></ion-icon></a>
+                </li>
             </div>
+            <p>Connect:</p>
         </section>
     </main>
+    <script>
+        const menu = document.querySelector(".menu");
+        const toggle = document.querySelector(".toggle");
+
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        })
+    </script>
     <footer>
         <p>&copy; 2024 Kelly Kevin Momanyi. All rights reserved.</p>
     </footer>
